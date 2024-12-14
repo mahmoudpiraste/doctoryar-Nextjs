@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: Peyda;
+  src: url(../../public/font/peyda.ttf);
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +20,8 @@
 }
 
 body {
+  font-family: Peyda !important;
+  font-size: 12px !important;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +29,31 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+h6{
+  font-size: 12px !important;
+}
+tspan {
+  font-family: Peyda !important;
+  font-size: 12px;
+ 
+}
+
+.MuiChartsLegend-mark{
+  margin: 20px !important;
+}
+
+.Toastify__toast-container{
+font-family: Peyda !important;
+font-weight: 600;
+font-size: 12px !important;
+text-align: left !important;
+width: 250px !important;
+}
+
+@media (max-width:700) {
+  .Toastify__toast-container{
+    width: 80% !important;
+    margin-top: 15px !important;
+  }  
 }

@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      //create this config for simplify import context from context file 
+      "@/context/*": ["./context/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/components/*": ["./components/layout/*"]
     }
   }
 }
