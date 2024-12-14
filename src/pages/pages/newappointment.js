@@ -7,7 +7,7 @@ import PatentListSelector from '../../../components/layout/pateintlistselector';
 import PersianDatePicker from '../../../components/layout/datepicker';
 import { PatientContext } from '@/context/patientContext';
 
-export default function newAppointment() {
+export default function NewAppointment() {
   const router = useRouter();
 
     const [mypateintId, setMypateintId] = useState('');

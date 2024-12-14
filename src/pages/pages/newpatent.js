@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import {  useRouter  } from 'next/router';
 import PatentList from '../../../components/layout/patentlist';
 
-export default function newPatent() {
+export default function NewPatent() {
   const router = useRouter();
 
     const [mypateintname, setMypateintname] = useState('');
