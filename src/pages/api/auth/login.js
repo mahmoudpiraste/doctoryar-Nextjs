@@ -21,10 +21,10 @@ export default async function handler(req, res) {
             });
 
             
-            // console.log('Response from API:', resApi);
+            console.log('Response from API:', resApi);
 
 
-            // console.log(resApi.data.user);
+            console.log(resApi.data.user);
 
 
         
@@ -40,7 +40,7 @@ export default async function handler(req, res) {
 
           
            
-        // console.log("Admin",resApi.data.user)
+        console.log("Admin",resApi.data.user)
           
 
 
@@ -48,7 +48,7 @@ export default async function handler(req, res) {
 
 
         }catch(err){
-            // console.log('Error:', err);
+            console.log('Error:', err);
             
           
             res.status(422).json({message: {'err': (err) } })

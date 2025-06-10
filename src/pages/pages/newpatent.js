@@ -4,6 +4,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import {  useRouter  } from 'next/router';
 import PatentList from '../../../components/layout/patentlist';
+import AppointMentList from '../../../components/layout/appointmentlist';
 
 export default function NewPatent() {
   const router = useRouter();
@@ -92,6 +93,7 @@ export default function NewPatent() {
 
             <PatentList/>
         </div>
+            <AppointMentList/>
         </div>
 
    

@@ -1,12 +1,11 @@
 // components/LastReserve.js
 import axios from 'axios';
 import useSWR from "swr";
-import PersianDatePicker from './datepicker';
 
 
 const fetcher = url => axios.get(url).then(res => res.data)
 
-function PatentList() {
+function AppointMentList() {
   
 
   const { data, error } = useSWR(`${process.env.NEXT_PUBLIC_APP_API_URL}/patents/appointmentlist`, fetcher)
@@ -21,8 +20,7 @@ function PatentList() {
     <div className="container-fluid pt-4 px-4">
       <div className="bg-light text-center rounded p-4">
         <div className="d-flex align-items-center justify-content-between mb-4">
-        <PersianDatePicker/>
-          <h6 className="mb-0">آخرین مراجعین ثبت نام شده</h6>
+          <h6 className="mb-0"> نوبت ها</h6>
           <a href="">مشاهده همه</a>
         </div>
         <div className="table-responsive">
@@ -63,4 +61,4 @@ function PatentList() {
   );
 }
 
-export default PatentList;
+export default AppointMentList;

@@ -158,7 +158,7 @@ function Header () {
                     <Link href="/" className={`nav-item nav-link ${router.pathname === '/' ? 'active' : ''}`}>
                  
                              <i className="bi bi-fingerprint"></i>  داشبورد </Link>
-                    <Link href="/" className={`nav-item nav-link ${router.pathname === '' ? 'active' : ''}`}>
+                    <Link href="/pages/appointmentlist" className={`nav-item nav-link ${router.pathname === '/pages/appointmentlist' ? 'active' : ''}`}>
                  
                              <i className="bi bi-fingerprint"></i>  مشاهده نوبت ها </Link>
                    
