@@ -80,7 +80,7 @@ useEffect(() => {
       )}
                 </div>
                         <div className='mt-1'>
-                          <h2 className='fs-6 fw-bold'>مشخصات رزرو</h2>
+                          <h2 className='fs-6 '>مشخصات رزرو</h2>
                           <span>روش پرداخت را انتخاب کنید</span>
                           <br/>
                           
@@ -89,6 +89,7 @@ useEffect(() => {
                           <input type="radio" id="inputTow" name="fav_language" onChange={(e) => setMypateintPay(e.target.value)} value="Online"/>
                            <label for="inputTow">آنلاین</label><br/>
 
+                            <br></br>
                           
                           <PersianDatePicker/>
                         

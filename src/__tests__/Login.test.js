@@ -1,8 +1,9 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Login from '@/components/login';
-import AuthContext from '@/context/AuthContext';
+import Login from '@/pages/auth/login';
+import AuthProvider from '@/context/AuthContext';
+import { AuthContext } from '@/context/AuthContext';
 
 // Mock toastify
 jest.mock('react-toastify', () => ({

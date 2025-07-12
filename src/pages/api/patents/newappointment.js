@@ -1,8 +1,5 @@
 import axios from "axios";
 
-import cookie from "cookie";
-import { toast } from "react-toastify";
-import { useRouter } from 'next/router';
 
 export default async function handler(req, res) {
     // console.log('Handler started');
@@ -10,10 +7,10 @@ export default async function handler(req, res) {
 
     if(req.method === 'POST') {
 
-        if (!req.cookies.token) {
-            console.log("token not find")
-            
-        }
+        // if (!req.cookies.token) {
+        //     console.log("token not find")
+        //     // router.push('/pages/auth/login')
+        // }
         console.log('POST request received');
 
    

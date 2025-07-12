@@ -4,7 +4,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import {  useRouter  } from 'next/router';
 import PatentList from '../../../components/layout/patentlist';
-import AppointMentList from '../../../components/layout/appointmentlist';
+// import AppointMentList from '../../../components/layout/appointmentlist';
 
 export default function NewPatent() {
   const router = useRouter();
@@ -69,6 +69,7 @@ export default function NewPatent() {
                         <div className='mt-3'>
                           <p>مشخصات بیمه</p>
                 <select onChange={(e) => setMypateintinsurance(e.target.value)} type="select" id="input-add" className="input-add"   >
+  <option value="">نوع بیمه را مشخص کنید</option>
                 <option value="آزاد">آزاد</option>
   <option value="تامین اجتماعی">تامین اجتماعی</option>
   <option value="خدمات درمانی">خدمات درمانی</option>
@@ -93,7 +94,7 @@ export default function NewPatent() {
 
             <PatentList/>
         </div>
-            <AppointMentList/>
+            {/* <AppointMentList/> */}
         </div>
 
    
